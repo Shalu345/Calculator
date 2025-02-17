@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CAL.css">
+</head>
+<body>
+
+<form action="" id="Display">
+<input type="text" id="Show" value="" placeholder="0"><br>
+<input type="button" id="sym" class="btn" value="AC" onclick="Display.Show.value =''">
+<input type="button" id="sym" class="btn" value="Del" onclick="Display.Show.value=Display.Show.value.toString().slice(0,-1)">
+<input type="button" id="sym" class="btn" value="." onclick="Display.Show.value +='.'">
+<input type="button" id="sym" class="btn" value="%" onclick="Display.Show.value +='%'"><br>
+
+<input type="button" class="btn" value="1" onclick="Display.Show.value +='1'">
+<input type="button" class="btn" value="2" onclick="Display.Show.value +='2'">
+<input type="button" class="btn" value="3" onclick="Display.Show.value +='3'" >
+<input type="button" id="sym" class="btn" value="/"  onclick="Display.Show.value +='/'"><br>
+
+
+<input type="button" class="btn" value="4"  onclick="Display.Show.value +='4'">
+<input type="button" class="btn" value="5"  onclick="Display.Show.value +='5'">
+<input type="button" class="btn" value="6"  onclick="Display.Show.value +='6'">
+<input type="button" id="sym" class="btn" value="*" onclick="Display.Show.value +='*'"><br>
+
+<input type="button" class="btn" value="7" onclick="Display.Show.value +='7'">
+<input type="button" class="btn" value="8" onclick="Display.Show.value +='8'">
+<input type="button" class="btn" value="9" onclick="Display.Show.value +='9'">
+<input type="button" id="sym" class="btn" value="-" onclick="Display.Show.value +='-'"><br>
+
+
+<input type="button" class="btn" value="00" onclick="Display.Show.value +='00'">
+<input type="button" class="btn" value="0" onclick="Display.Show.value+='0'">
+<input type="button" id="equal" class="btn" value="=" onclick="Display.Show.value=eval(Display.Show.value)">
+<input type="button" id="sym"  class="btn" value="+" onclick="Display.Show.value+='+'"><br>
+
+
+
+
+</form>
+
+</body>   
+
+</html>
